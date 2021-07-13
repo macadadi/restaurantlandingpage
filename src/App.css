@@ -1,0 +1,398 @@
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* navigation bar styling */
+.mainnav{
+  background-color: rgb(236, 221, 221);
+  max-height: 50px;
+  overflow: hidden;
+}
+
+
+
+.qq{
+  background-color:rgb(184, 148, 148);
+}
+.outer-qq-btn{
+  background-color:rgb(184, 148, 148);
+
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.qq-btn{
+  border: none;
+  max-height: 30px;
+  max-width: 120px;
+  outline: none;
+  margin: 2px;
+}
+
+.product-filter h1 {
+  flex-grow: 1;
+}
+
+.single-meal {
+ background-color: whitesmoke;
+
+  border-radius: 10px;
+}
+
+
+.btn-cart{
+  border: none !important;
+  background-color: rgba(255, 192, 203, 0.89);
+}
+
+.btn{
+outline: none;
+border: none;
+}
+
+
+.sub-btn{
+  margin: 0;
+  border: none !important;
+  outline: none !important;
+
+  background-color: transparent;
+}
+
+.payment-div{
+  height: 100vh;
+}
+.payment-shad{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+}
+.qtt-btn{
+
+  border-radius: 10px;
+  padding:4px !important;
+  background-color: rgb(115, 115, 141) !important;
+}
+
+.qtt-btn:active{
+  background-color: rgb(214, 18, 18) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* 
+style for spinner */
+
+.d-load{
+  width: 100%;
+  height: 40%;
+  background-color: gray;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 40%;
+ 
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Radio button */
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+/* admin styles */
+.side-nave{
+background:#718EBF;
+height: 100vh;
+
+}
+.side-nave h3{
+  text-decoration: none !important;
+  border: none;
+  color: white;
+}
+.side-nave label{
+  padding: 2px;
+}
+.side-nave label:hover{
+background-color: gray;
+}
+.side-nave label:active{
+  background-color: pink;
+}
+/* header section */
+.header-div{
+  background-color: whitesmoke;
+}
+
+/* order section */
+.d-total{
+  background-color: #8334D3;
+
+  
+}
+.d-active{
+  background-color:#431570;
+
+  
+}
+.d-delivered{
+  background-color: #54c78c;
+
+  
+}
+.add-product{
+  background-color:#9770be;
+  border-radius: 10px;
+  transition: background-color 2s ease-out 50ms;
+  box-shadow: -15px 13px 14px -11px rgba(225,81,97,0.75);
+-webkit-box-shadow: -15px 13px 14px -11px rgba(225,81,97,0.75);
+-moz-box-shadow: -15px 13px 14px -11px rgba(225,81,97,0.75);
+}
+.order-t-d,.product-div{
+  min-width: 200px;
+  border-radius: 10px;
+  transition: background-color 2s ease-out 50ms;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: -9px 13px 5px 0px rgba(230,46,46,0.26);
+-webkit-box-shadow: -9px 13px 5px 0px rgba(230,46,46,0.26);
+-moz-box-shadow: -9px 13px 5px 0px rgba(230,46,46,0.26);
+}
+
+.order-t-d:hover,.product-div:hover,.add-product:hover{
+  cursor: pointer;
+  background-color: rgb(240, 207, 202);
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 760px) {
+  .order-t-d,.product-div{
+    margin-left: 2px !important;
+    padding: 2px !important;
+    box-shadow:none;
+    font: small !important;
+    font-family: sans-serif !important;
+    min-width: auto !important;
+    border: none;
+    transform: none !important;
+    transition: none !important;
+  }
+  .product-div h3,h5,.side-nave label h3,.order-t-d h2,h4{
+    font-size: small !important;
+  }
+  .side-nave{
+   min-height: 75vh;
+
+  }
+
+}
+.advert-div{
+  min-height: 80vh;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 900px) {
+  .advert-div{
+    display: none;
+  }
+ 
+
+  
+}
+ 
+/* styling for nav bar */
+.toggleIcon{
+  display: none;
+}
+.small-div{
+  display: none;
+
+}
+.big-div{
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 690px) {
+  .small-div{
+   flex-direction: column ;
+   display: inline;
+  
+  }
+  .toggleIcon{
+    display: inline;
+  }
+  .big-div{
+    display: none;
+  }
+  .mainnav{
+    max-height: 70vh;
+  }
+  
+}
+
+/* product form */
+.product-form{
+  background-color:rgb(89, 125, 146);
+  border-radius: 10px;
+  box-shadow: -9px 13px 5px 0px rgba(236, 147, 147, 0.26);
+  -webkit-box-shadow: -9px 13px 5px 0px rgba(230, 196, 196, 0.26);
+  -moz-box-shadow: -9px 13px 5px 0px rgba(150, 114, 114, 0.26);
+}
+.product-form h3{
+  text-align: center;
+  color: white;
+}
+footer{
+  background-color: rgb(221, 201, 221);
+  margin-top: 25px;
+}
+footer ul,a{
+  list-style: none;
+  padding: 4px;
+  color: black;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
